@@ -1,0 +1,11 @@
+meta {
+  name: NATS - Consume (pull batch)
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/nats/consume?batch=5&expires_ms=3000
+  body: none
+  auth: none
+}

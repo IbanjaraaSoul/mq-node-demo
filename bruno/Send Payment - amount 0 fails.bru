@@ -1,0 +1,20 @@
+meta {
+  name: Send - Payment (amount 0, fails)
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/send
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "topic": "payments",
+    "payload": {
+      "amount": 0
+    }
+  }
+}

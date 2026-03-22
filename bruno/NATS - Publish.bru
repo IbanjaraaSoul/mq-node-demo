@@ -1,0 +1,22 @@
+meta {
+  name: NATS - Publish (JetStream)
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/nats/publish
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "subject": "demo.orders",
+    "data": {
+      "orderId": "ord-1005",
+      "item": "Book05",
+      "qty": 2
+    }
+  }
+}

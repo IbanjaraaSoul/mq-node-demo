@@ -1,0 +1,17 @@
+{
+  "name": "mq-node-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node scripts/demo.mjs",
+    "nats:up": "docker compose up -d",
+    "nats:down": "docker compose down"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nats": "^2.29.3"
+  }
+}
